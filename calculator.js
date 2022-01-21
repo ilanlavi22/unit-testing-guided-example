@@ -1,13 +1,24 @@
 function sum(a, b) {
-  return;
+  const number1 = a || 0;
+  const number2 = b || 0;
+  return number1 + number2;
 }
 
 function subtract(a, b) {
-  return;
+  const number1 = a || 0;
+  const number2 = b || 0;
+  return number1 - number2;
 }
 
 function divide(a, b) {
-  return;
+  const number1 = a || 0;
+  const number2 = b || 0;
+
+  if (!!number1 && !!number2) {
+    return number1 / number2;
+  } else {
+    throw new Error('An explanatory error message');
+  }
 }
 
 function multiply(a, b) {
